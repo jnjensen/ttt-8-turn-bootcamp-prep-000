@@ -1,3 +1,3 @@
 def display_board(array)
-  puts "    
-def turn
+  puts " #{array[0]} | #{array[1]} | #{array[2]} "
+  puts "-----------"
