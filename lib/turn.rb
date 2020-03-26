@@ -34,7 +34,7 @@ def move(board, index, token = "X")
   return board
 end
 
-def turn
+def turn(array)
   puts "Please enter 1-9:"
 end
 
