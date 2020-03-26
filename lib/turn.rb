@@ -15,6 +15,11 @@ def position_taken?(board, index)
   end
 end
 
+def input_to_index(user_input)
+  user_index = user_input.to_i - 1
+  return user_index
+end
+
 def valid_move?(board, index)
   y = board[index]
   if y >= 0 && y <= 8
