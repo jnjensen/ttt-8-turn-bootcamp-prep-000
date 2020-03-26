@@ -34,6 +34,7 @@ def move(board, index, token = "X")
   return board
 end
 
+def turn
 
   
   
