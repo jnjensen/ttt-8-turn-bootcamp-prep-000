@@ -6,8 +6,13 @@ def display_board(array)
   puts " #{array[6]} | #{array[7]} | #{array[8]} "
 end
 
-def position_taken?(board, index)
-  x = board[index]
+def input_to_index(user_input)
+  user_index = user_input.to_i - 1
+  return user_index
+end
+
+def position_taken?(array, token_index)
+  x = array[token_index]
   if x == " " || x == "" || x == nil
     return false
   elsif x == "X" || x == "O"
@@ -15,19 +20,12 @@ def position_taken?(board, index)
   end
 end
 
-def input_to_index(user_input)
-  user_index = user_input.to_i - 1
-  return user_index
-end
-
-def valid_move?(board, index)
-  y = board[index].to_i
+def valid_move?(array, user_input)
+  y = user_input
   if y >= 0 && y <= 8
-    if !(position_taken?(board, index))
+    if !(position_taken?(array, y))
       return true
     end
-  else
-    return false
   end
 end
 
