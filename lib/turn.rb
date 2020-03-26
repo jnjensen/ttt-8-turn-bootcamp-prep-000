@@ -41,6 +41,7 @@ def turn(array)
   if valid_move?(array, index)
     move(array, index)
     display_board(array)
+    turn(array)
   else
     puts "Invalid move. Please enter 1-9:"
     turn(array)
