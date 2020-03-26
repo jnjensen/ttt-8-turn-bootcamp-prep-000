@@ -38,11 +38,8 @@ def turn(array)
   puts "Please enter 1-9:"
   input_by_user = gets.strip
   index = input_to_index(input_by_user)
-  if valid_move(array, index)
-   se
-    puts "That move is invalid. Please enter 1-9:"
-  end move(array, index)
-  el
+  move(array, index)
+  display_board(array)
 end
 
   
