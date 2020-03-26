@@ -36,6 +36,7 @@ end
 
 def turn(array)
   puts "Please enter 1-9:"
+  input_by_user =
 end
 
   
