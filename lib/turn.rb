@@ -21,7 +21,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  y = board[index]
+  y = board[index].to_i
   if y >= 0 && y <= 8
     if !(position_taken?(board, index))
       return true
